@@ -3,6 +3,8 @@ Tetris game
 
 Arcade tutorials: http://arcade.academy/examples/tetris.html#tetris
 
+Project source code: https://github.com/Elizaveta239/AdvancedDebugging
+
 """
 import arcade
 import random
@@ -151,7 +153,7 @@ class MyGame(arcade.Window):
     def on_update(self, dt):
         """ Update, drop stone if warranted """
         self.frame_count += 1
-        if self.frame_count % 20 == 0:
+        if self.frame_count % 10 == 0:
             self.drop()
 
     def move(self, delta_x):
